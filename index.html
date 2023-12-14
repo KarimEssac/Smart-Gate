@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS CSS-->
+    <link rel="stylesheet" href="assets/vendor/aos/css.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="assets/vendor/animateCss/animate.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Noto+Kufi+Arabic:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
+    <!--Main Css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart Gate</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-xl fixed-top">
+      <div class="container-fluid my-3 mx-2">
+        <div class="ms-0 Buttons">
+          <button class="btn mx-1" id="newMemberBtn">عضو جديد</button>
+          <button class="btn" id="signInBtn">تسجيل الدخول</button>
+      </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#ContactSection">اتصل بنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#Who">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#NadwatSection">الندوات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#DepartmentSection">قطاعتنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#ServicesSection">خدماتنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#NewsSection">الاخبار</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="MainA" aria-current="page" href="#">الرئيسية</a>
+                </li>
+              </ul>
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" alt="" width="" height="">
+            </a>
+                
+          </div>
+      </div>
+  </nav>
+  
+
+    <!--Hero Section-->
+
+    <section id="MainSection"  style="overflow: hidden; padding-top: 8%;">
+        <div class="container-fluid" id="MainSection">
+            <div class="row d-flex">
+                <div class="col-0 col-xl-1">
+                    <div class="rectangleBlue" style="display: flex;">
+                        <div class="cutout1"></div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="col-xl-5 col-lg-6 col-xs-12 HeroSecImg d-flex" >
+                    <img src="assets/img/HeroSection.png" style="max-width: 100%; height: auto;" alt="">
+                </div>
+                <div data-aos="fade-left" class="WordsCol col-lg-6 col-xl-5 col-xs-12">
+                    <img src="assets/img/OrangeLine.png"  alt="" id="OrangeLine">
+                    <div class="wHeroSec">
+                        <h1>SMART <span>GATE</span></h1>
+                        <p>الأفكار المبدعه والمبتكرة هي طريقنا لبناء علاقتنا مع العميل كفريق عمل واحد بداية من العمل سوياً ثم التشغيل والإدارة نعمل معا ننجح معا - وذلك عن طريق تقديم المنتجات والخدمات ذات الجوده العالية في مجال تكنولوجيا المعلومات لتطوير البرامج والبنية التحتية اللازمة من أجهزة وشبكات وبرمجيات لتطوير الأداء لدي العملاء</p>
+                        <a href="" class="my-3"id="KnowUs" ><span><img src="assets/img/backspace.png" alt="" class="me-2">تعرف علينا</span></a>
+                    </div>
+                    <img src="assets/img/BlueLine (1).png" alt="" id="BlueLine">
+                    
+                </div>
+                <div class="col-0 col-xl-1" >
+                    <div class="rectangleOrange mx-4 my-2">
+                      <img src="assets/img/OrangeRectangele.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Who are we Section-->
+    <section id = "WhoAreweSection" class="d-none " style="background: linear-gradient(#F8F8F8, #FFFFFF);">
+      <div class="container" style="max-width: 90%;">
+      <!--Cards-->
+      <div class="row my-5">
+        <div class="col-xxl-7 col-xl-6" style="display: flex; flex-direction: column; justify-content: center;">    
+          <div class="bluL d-flex justify-content-end" id = "BlueLine"><img src="assets/img/BlueLine (2).png" alt="" style="width: 15%; margin-right: 20%; margin-bottom: 8%;"></div>  
+          <div class="wSec" style="display: flex; flex-direction: column; align-items: end;">
+            <h1 style="font-size: 100px; color:#F4A825; font-size: 800;">SMART <span style="color: #3485B9;">GATE</span></h1>
+            <p class="text-end fs-5">تعد شركة سمارت جيت من الشركات الرائدة في صناعة الأفكار الإبداعية والمبتكرة لعملاها حيث تمنح فرصا فريدة للعملاء
+              للحصول علي حلول متكاملة من مصدر واحد وذلك بتطبيق حلول تقنية متكاملة وبطريقة تهدف لزيادة وسرعة الانتاجية
+              ١الربحية وبالمشاركة مع شركتنا تصبح الفرصه مواتيه للفوز بعمق التجربة والحلول التقنية الأبعد بكثير من الخبرة المحلية
+              إلخدماتنا التي تتضمن تصميم وتطبيق الشبكات السلكية واللاسلكية وتجهيز الاجهزة ومستلزماتها وملحقاتها لكل الاصناف،
+              المعروفة والمتناسقة اللازمة لتطوير البرامج والحلول المنكاملة والاستشارات التقنية والمعلوماتية وتصميم المواقع
+              البرمجيات والتدريب والصيانة وادارة النظم بشكل عام
+              
+              </p>
+          </div>
+          <div class="oranL" id="OrangeLine"><img src="assets/img/OrangeLineX2.png" alt="" style="width: 15%; margin-left: 15%; margin-top: 8%;"></div>
+      </div>
+      <div class="col-xxl-5 col-xl-6" style="display: flex; justify-content: center; align-items: center;">
+        <img src="assets/img/WhoAreWe/Group 11342.png" style="max-width: 100%; height: auto;" alt="">
+      </div>
+      </div>
+
+      </div>
+    </section>
+    <!--News Section-->
+    
+    <section id = "NewsSection"  style="background: linear-gradient(#F8F8F8, #FFFFFF); ">
+      <div class="container">
+        <div class="row">        
+          <div class="col-12 justify-content-end d-flex" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="300">
+          <h1 class="mx-4 my-5">اخر الاخبار</h1>
+          <div id = "blueHex" class="my-5"></div>
+        </div>
+      </div>
+      <!--Cards-->
+      <div class="row my-5">
+        <div class="col-md-6 col-xl-4">        
+          <div class="card" style="width: 100%;" data-aos="flip-left" >
+          <img src="assets/img/News1 (1).png" class="card-img-top" alt="Img1">
+          <div class="card-body">
+            <h6 class="card-title text-end text-secondary">الأحد ، الموافق 29 / 01 / 2022 <img src="assets/img/event (1).png" alt=""></h6>
+            <p class="card-text text-end">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">        
+        <div class="card" style="width: 100%;" data-aos="flip-up">
+        <img src="assets/img/News2 (1).png" class="card-img-top" alt="Img2">
+        <div class="card-body">
+          <h6 class="card-title text-end text-secondary">الأحد ، الموافق 29 / 01 / 2022 <img src="assets/img/event (1).png" alt=""></h6>
+            <p class="card-text text-end">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-xl-4">        
+      <div class="card" style="width: 100%;" data-aos="flip-right">
+      <img src="assets/img/News3.jpg" class="card-img-top" alt="Img3" style="border-radius: 20px; height: auto;">
+      <div class="card-body">
+        <h6 class="card-title text-end text-secondary">الأحد ، الموافق 29 / 01 / 2022 <img src="assets/img/event (1).png" alt=""></h6>
+            <p class="card-text text-end">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+      </div>
+    </div>
+  </div>
+      </div>
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <section id = "ServicesSection" style="background: linear-gradient(to top,#F8F8F8, #FFFFFF);">
+      <!--Head-->
+      <div class="container">
+        <div class="row">        
+          <div class="col-12 justify-content-end d-flex" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="300">
+          <h1 class="mx-4 my-5">خدماتنا</h1>
+          <div id = "blueHex" class="my-5"></div>
+        </div>
+      </div>
+      <!--Cards-->
+      <div class="row my-5">
+        <div class="col-xl-3 col-sm-6">
+          <div class="card" style="width: 18rem;" data-aos="flip-left" >
+            <div class="row justify-content-end d-flex mx-3 mt-4">
+              <div class="col-8">
+                <div class="bG justify-content-center d-flex" style="background-color: rgba(11,170,229,0.2);">
+                  <img src="assets/img/MobileApps (1).png" alt="">
+                </div>
+                
+              </div>
+            </div>
+            <div class="card-body" >
+              <h6 class="card-title text-end ">تطبيقات الموبايل</h6>
+              <p class="card-text text-end text-secondary">نظراً لأهمية تطبيقات الموبايل وكثرة عدد مستخدميها بشكل لا غني عنه الآن نهتم بالعمل عليها دائماً بكافة التقنيات والأنظمة بمختلف أنواعها</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="card" style="width: 18rem;" data-aos="flip-left" >
+            <div class="row justify-content-end d-flex mx-3 mt-4">
+              <div class="col-8">
+                <div class="bG justify-content-center d-flex" style="background-color: rgba(83,11,229,0.2);">
+                  <img src="assets/img/WebDevelopment (1).png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-body" >
+              <h6 class="card-title text-end ">تطوير المواقع</h6>
+              <p class="card-text text-end text-secondary">نعمل علي تحليل البيانات وبناءها والعمل علي إنشاء نظام برمجي يناسب حاجتك وإدارة مشروعك بشكل تفاعلي تمهيداً لإنطلاقة الي السوق</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="card" style="width: 18rem;" data-aos="flip-left" >
+            <div class="row justify-content-end d-flex mx-3 mt-4">
+              <div class="col-8">
+                <div class="bG justify-content-center d-flex" style="background-color: rgba(229,93,11,0.2);">
+                  <img src="assets/img/WebDesign (1).png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title text-end ">تصميم المواقع</h6>
+              <p class="card-text text-end text-secondary">إنشاء وتصميم المواقع بالشكل الذي يتناسب مع هويتك واهدافك بشكل احترافي لتحسين الشكل العام وقابلية المستخدم لدي موقعك</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="card" style="width: 18rem;" data-aos="flip-left" >
+            <div class="row justify-content-end d-flex mx-3 mt-4">
+              <div class="col-8">
+                <div class="bG justify-content-center d-flex" style="background-color: rgba(229,184,11,0.2);">
+                  <img src="assets/img/CreateApps (1).png" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title text-end ">إنشاء التطبيقات</h6>
+              <p class="card-text text-end text-secondary">نحن قادرون علي بناء مشاريع وتطبيقات برمجية لإدارة مشاريعك من خلال فريق متخصص والعمل بكفاءة عالية والأهتمام بجودة المنتج</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--Know your GPA Section-->
+    <section id = "KnowGPaSection"  style="background: linear-gradient(#F8F8F8, #FFFFFF);">
+      <div class="container">
+        <img src="assets/img/knowGPA (1).png" style="max-width: 100%;" alt="" width="" data-aos="zoom-out" data-aos-easing="linear"
+        data-aos-duration="300">
+      </div>
+    </section>
+    <!--Department Section-->
+    <section id = "DepartmentSection" style="background: linear-gradient(to top,#F8F8F8, #FFFFFF);">
+      <div class="container">
+        <div class="row">        
+          <div class="col-12 justify-content-end d-flex" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="300">
+          <h1 class="mx-4 my-5">قطاعتنا</h1>
+          <div id = "blueHex" class="my-5"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="card" style="width: 100%" data-aos="flip-left" data-aos-easing="linear"
+          data-aos-duration="400" data-aos-delay="0">
+            <img src="assets/img/Farming.png" class="card-img-top" alt="Img1" >
+            <div class="card-body" style="background-color: #00D586;">
+              <h3 class="card-text text-center text-light">قطاع الزراعة</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="card" style="width: 100%" data-aos="flip-up" data-aos-easing="linear"
+          data-aos-duration="400" data-aos-delay="400">
+            <img id = "Carsimg"src="assets/img/CarsDepart (1).png" class="card-img-top" alt="Img1">
+            <div class="card-body" style="background-color: #F86707;">
+              <h3 class="card-text text-center text-light">قطاع السيارات</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="card" style="width: 100%" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="400" data-aos-delay="800">
+            <img src="assets/img/Learn.png" class="card-img-top" alt="Img1">
+            <div class="card-body" style="background-color: #07BEF8;">
+              <h3 class="card-text text-center text-light">قطاع التعليم</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Nadwat Section-->
+    <section id = "NadwatSection" style="background: linear-gradient(#F8F8F8, #FFFFFF);">
+      <div class="container">
+        <div class="row">        
+          <div class="col-12 justify-content-end d-flex" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="300">
+          <h1 class="mx-4 my-5">الندوات</h1>
+          <div id = "blueHex" class="my-5"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">        
+          <div class="card" style="width: 100%" data-aos="flip-left">
+          <img src="assets/img/DevelopmentSiminar.jpg" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title text-end">ندوة خاصة عن مراحل انشاء المواقع</h5>
+            <h6 class="card-title text-end text-secondary mt-3">يوم الأحد ، الموافق 29 / 01 / 2022 <img src="assets/img/event (1).png" alt=""></h6>
+            <p class="text-end mt-4 togglereg" ><span id="signInBtn" style="cursor: pointer;"><img src="assets/img/backspace.png" alt="" class="mx-2">التسجيل الان</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-6">        
+        <div class="card" style="width: 100%" data-aos="flip-up">
+        <img src="assets/img/Technosiminar.jpg" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+        <div class="card-body">
+          <h5 class="card-title text-end">ندوة خاصة بأخر تطورات التكنولوجيا</h5>
+          <h6 class="card-title text-end text-secondary mt-3">يوم الأحد ، الموافق 29 / 01 / 2022 <img src="assets/img/event (1).png" alt=""></h6>
+          <p class="text-end mt-4 togglereg"><span id="signInBtn" style="cursor: pointer;"><img src="assets/img/backspace.png" alt="" class="mx-2">التسجيل الان</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-6">
+    <div class="card" style="width: 100%" data-aos="flip-right">
+      <img src="assets/img/siminar.jpg" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+      <div class="card-body">
+        <h5 class="card-title text-end">ندوة خاصة بالاعداد المهني</h5>
+        <h6 class="card-title text-end text-secondary mt-3">يوم الأحد ، الموافق 29 / 01 / 2022 <img src="assets/img/event (1).png" alt=""></h6>
+        <p class="text-end mt-4 togglereg"><span id="signInBtn" style="cursor: pointer;"><img src="assets/img/backspace.png" alt="" class="mx-2">التسجيل الان</span></p>
+      </div>
+    </div>
+    </div>
+      </div>
+      </div>
+    </section>
+
+    <!--RegisterNadwa-->
+
+          <div id = "RegisterNadwa" class="d-none animate__animated " style="background:transparent; display: flex; justify-content: center; align-items: center;">
+            <div class="container success w-75 d-none" style="height: 60vh; border-radius: 20px; background-color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <div class="row">
+                <div class="col-12 mt-4 justify-content-end d-flex">
+                  <img src="assets/img/register/right Arrow.png" class="CloseBtn" alt="" style="margin-right: 2%; cursor: pointer;">
+                </div>
+              <div class="row">
+                <div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+                  <img src="assets/img/register/Correct.gif" alt="" style="width: 35%;">
+                </div>
+                </div>
+                <div class="row " style="margin-top: -5%;">
+                  <div class="container w-50 text-center">
+                  <h2>تم التسجيل بنجاح</h2>
+                  <p class="fs-5">من فضلك قم بمراجعة البريد الوارد لديك علي بريدك الإلكتروني الخاص بك لمعرفة التفاصيل الخاصة بالندوة وتذكرة الحضور والميعاد</p>
+                  <a id="signInBtn" style="cursor: pointer;" class="CloseBtn"><span style="padding: 7%;">حسناً فهمت</span></a>
+                </div>
+              </div>
+              </div>
+
+            </div>
+              <div class="container fst w-75" style="height: 60vh; border-radius: 20px; background-color: white">
+              <div class="row">
+                <div class="col-12 mt-4 justify-content-end d-flex">
+                  <img src="assets/img/register/right Arrow.png" class="CloseBtn" alt="" style="margin-right: 2%; cursor: pointer;">
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="assets/img/register/grouppic (1).png" alt="">
+                  </div>
+                  <div class="col-6 d-flex flex-column" style="align-items: end; text-justify: end; text-align: end; justify-content: center;">
+                    <h2 class="fs-3">التسجيل في الندوة</h2>
+                    <p style="color: #8E8E8E; font-weight: 300; font-size: 16px;">من فضلك قم بإدخال البيانات المطلوبة منك وسوف يتم إرسال تفاصيل الندوة لك وموعدها علي بريدك الإلكتروني ورقم تذكرة الحضور الخاصة بك</p>
+                    <input type="text" class="form-control text-end" placeholder="الاسم بالكامل" aria-label="First name">
+                    <input type="tel" class="form-control text-end mt-3" placeholder="رقم الهاتف" aria-label="First name">
+                    <input type="email" class="form-control text-end mt-3" placeholder="بريدك الالكتروني" aria-label="First name">
+                    <a id="signInBtn" class="text-center mt-4 Send" style="text-decoration: none; display: flex; justify-content: center; background-color: #F6C608; cursor: pointer;"><span style="text-align: center;">تسجيل الان</span></a>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+    <!--Special Members-->
+    <section id = "SpecialMembersSection"  style="background: #FFFFFF;">
+      <div class="container">
+        <div class="row">        
+          <div class="col-12 justify-content-end d-flex" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="300">
+          <h1 class="mx-4 my-5">عملائنا المميزون</h1>
+          <div id = "blueHex" class="my-5"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/SMembers/5 (1).png" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/SMembers/3 (1).png" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/SMembers/2 (1).png" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/SMembers/1 (1).png" class="card-img-top" alt="Img1" style="border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section id = "ContactSection"  style="background: linear-gradient(to top,#F8F8F8, #FFFFFF);">
+      <div class="container">
+        <div class="row">        
+          <div class="col-12 justify-content-end d-flex" data-aos="flip-right" data-aos-easing="linear"
+          data-aos-duration="300">
+          <h1 class="mx-4 my-5">تواصل معنا</h1>
+          <div id = "blueHex" class="my-5"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xxl-7 col-xl-4">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.5622570901264!2d31.3426703763655!3d30.078079674906782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e0576d3c7bf%3A0x69769c9fdcacf1c4!2s9%20Hassan%20Aflaton%2C%20Masaken%20Al%20Mohandesin%2C%20Nasr%20City%2C%20Cairo%20Governorate%204451716!5e0!3m2!1sen!2seg!4v1702413712096!5m2!1sen!2seg" width="100%" height="600" style="border:0;" id="map"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+        <div class="col-xxl-5 col-xl-8">
+          <div class="row" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="100"
+          data-aos-delay="0">
+            <div class="col text-end" style="font-size: 22px; margin-bottom: 3%;">اسمك او اسم المؤسسة</div>
+          </div>
+          <div class="row" data-aos="zoom-in-up" 
+          data-aos-easing="linear"
+          data-aos-duration="300"
+          data-aos-delay="100">
+            <div class="col">
+              <input type="text" class="form-control text-end" placeholder="...اكتب الاسم هنا" aria-label="First name">
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="100"
+          data-aos-delay="400">
+            <div class="col text-end" style="font-size: 22px; margin-bottom: 3%; margin-top: 2%;">اختار الخدمة التي تريدها</div>
+          </div>
+          <div class="row" data-aos="zoom-in-up" 
+          data-aos-easing="linear"
+          data-aos-duration="300"
+          data-aos-delay="500">
+            <div class="col-12">
+              <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+              <select class="form-select text-end" id="inlineFormSelectPref" style="background-color: #F2F1F5;
+              color: #979797;
+              font-size: 20px;
+              border-radius: 10px;">
+                <option selected>...اختار</option>
+                <option value="1">هندسة</option>
+                <option value="2">ميكانيكا</option>
+                <option value="3">حاسبات</option>
+              </select>
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="100"
+          data-aos-delay="800">
+            <div class="col text-end" style="font-size: 22px; margin-bottom: 3%; margin-top: 2%;">رقم الهاتف</div>
+          </div>
+          <div class="row" data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="300"
+          data-aos-delay="900">
+            <div class="col">
+              <input type="tel" class="form-control text-end" placeholder="مثال: 45-------012" aria-label="First name">
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="100"
+          data-aos-delay="1200">
+            <div class="col text-end" style="font-size: 22px; margin-bottom: 3%; margin-top: 2%;">البريد الالكتروني</div>
+          </div>
+          <div class="row" data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="300"
+          data-aos-delay="1300">
+            <div class="col">
+              <input type="email" class="form-control text-end" placeholder="kee*****@gmail.com: مثال" aria-label="First name">
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="100"
+          data-aos-delay="1600">
+            <div class="col text-end" style="font-size: 22px; margin-bottom: 3%; margin-top: 2%;">اترك رسالة لنا</div>
+          </div>
+          <div class="row" data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="300"
+          data-aos-delay="1700">
+            <div class="col">
+              <input type="text" class="form-control text-end" placeholder="...اترك رسالتك هنا" aria-label="First name" style="height: 10vh;">
+            </div>
+          </div>
+          <div class="row" data-aos="flip-left"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          data-aos-delay="2000">
+            <button class="btn w-100 mt-3" id="signInBtn" style="border-radius: 25px;">ارسال</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer style="background-color: #3485B9; margin-top: 2%;">
+      <div class="container-fluid">      
+        <div class="row justify-content-end d-flex text-end">
+        <div class="col-xxl-3 Media col-lg-6">
+          <h5 style="color: #FFFFFF;" class="my-5 mx-3">تابعنا عبر</h5>
+          <div class="container-fluid text-end">
+            <i class="fa-brands fa-facebook-f mx-4 fs-3" style="color: #F6C608;"></i>
+            <i class="fa-brands fa-instagram mx-4 fs-3" style="color: #F6C608;"></i>
+            <i class="fa-brands fa-youtube ms-4 fs-3" style="color: #F6C608;"></i>
+          </div>
+          <div class="Subs my-5 w-75 d-flex">
+            <span id="signInBtn" class="text-center btn" style="align-items: center; justify-content: center; display: flex; border-radius: 5px 0 0 5px; cursor: pointer;">اشترك الان</span>
+            <input type="email" class="form-control" name="" id="" placeholder="بريدك الالكتروني" style="text-align: end; color: #979797; border-radius: 0 15px 15px 0; width: 100%;">
+          </div>
+        </div>
+        <div class="col-xxl-3 col-lg-6 Media">
+          <h4 style="color:#FFFFFF ;" class="my-5 mx-3">تواصل معنا عبر</h2>
+            <div class="Mob d-flex" style="color: #F6C608;">
+              <h4 class="text-light">01069673344</h4>
+              <i class="fa-solid fa-mobile-screen ms-5 fs-2"></i>
+            </div>
+            <div class="Phone d-flex mt-2" style="color: #F6C608;">
+              <h4 class="text-light">0224199056</h4>
+              <i class="fa-solid fa-phone fs-3 ms-5"></i>
+            </div>
+            <div class="Mail d-flex mt-2" style="color: #F6C608;">
+              <h4 class="text-light">info@smart-gate.net</h4>
+              <i class="fa-solid fa-envelope fs-2 ms-5"></i>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-lg-6 Tabs">
+          <ul class="text-center justify-content-center d-flex flex-column my-5" style="color: #FFFFFF;">
+            <li><a href=""></a>الرئيسية</li>
+            <li><a href=""></a>خدماتنا</li>
+            <li><a href=""></a>قطاعتنا</li>
+            <li><a href=""></a>الندوات</li>
+            <li><a href=""></a>من نحن</li>
+          </ul>
+        </div>
+        <div class="col-xxl-3 col-lg-6 Info">
+          <img src="assets/img/logobig.png" alt="" class="my-5 mx-3">
+          <div class="Mob d-flex" style="color: #F6C608;">
+            <h4 class="fs-5 text-light">عقار رقم 9 شارع حسن افلاطون ارض الجولف – مدينة نصر</h4>
+            <i class="fa-solid fa-location-dot ms-3 fs-2"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center fs-6">Smart Gate 2021 جميع الحقوق محفوظة لدى</p>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <div id="overlay"></div>
+</body>
+<!--Bootrstrap Js-->
+<script src="assets/vendor/Bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Jquery-->
+<script src="assets/vendor/jQuery/jquery.js"></script>
+<!--AOS JS-->
+<script src="assets/vendor/aos/js.js"></script>
+<script>
+  AOS.init();
+</script>
+<!--Main Js-->
+<script src="js/script.js"></script>
+</html>
